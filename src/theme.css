@@ -1,0 +1,27 @@
+@layer base {
+    :root {
+        --padding-btn: clamp(0.25rem, -0.423rem + 2.692vw, 2rem);
+        --radius-btn: 20px;
+
+        --color-primary: #6200ea;
+        --color-primary-light: #bb86fc;
+        --color-primary-dark: #3700b3;
+
+        --color-secondary: #03dac6;
+        --color-secondary-light: #70efde;
+        --color-secondary-dark: #018786;
+    }
+
+    .theme-tailwind {
+        --padding-btn: theme(spacing.4);
+        --radius-btn: theme(borderRadius.lg);
+
+        --color-primary: theme(colors.blue.500);
+        --color-primary-light: theme(colors.blue.300);
+        --color-primary-dark: theme(colors.blue.700);
+
+        --color-secondary: theme(colors.cyan.500);
+        --color-secondary-light: theme(colors.cyan.300);
+        --color-secondary-dark: theme(colors.cyan.700);
+    }
+}
