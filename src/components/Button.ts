@@ -9,6 +9,7 @@ export class Button extends LitElement {
             color: white;
             cursor: pointer;
             transition: background-color 0.2s ease;
+            background-color: var(--color-primary);
         }
 
         /* Types */
@@ -57,26 +58,25 @@ export class Button extends LitElement {
         }
         /* Sizes */
         .small {
-            padding: var(--padding-btn);
+            padding: var(--padding-btn) calc(var(--padding-btn) * 2);
             font-size: var(--text-xs, 0.75rem);
             border-radius: var(--radius-btn, 4px);
         }
 
         .medium {
-            padding: var(--padding-btn);
+            padding: var(--padding-btn) calc(var(--padding-btn) * 2);
             font-size: var(--text-sm, 1rem);
             border-radius: var(--radius-btn, 6px);
         }
 
         .large {
-            padding: var(--padding-btn);
+            padding: var(--padding-btn) calc(var(--padding-btn) * 2);
             border-radius: var(--radius-btn, 8px);
         }
     `
 
     @property() type: "primary" | "secondary" | "outline" = "primary"
     @property() size: "small" | "medium" | "large" = "medium"
-    @property() tailwind: "true" | "false" = "false"
 
     render() {
         console.log("Using custom styles")

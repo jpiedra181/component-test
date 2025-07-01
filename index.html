@@ -5,10 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./src/colors.css" />
         <link rel="stylesheet" href="./src/variables.css" />
-        <title>Vite + TS</title>
+        <title>Componentes Pruebas</title>
     </head>
     <body>
-        <my-button type="outline" size="large">Más información</my-button>
-        <script type="module" src="/src/components/button.ts"></script>
+        <div>
+            <my-button type="primary" size="small">Más información</my-button>
+            <my-button type="secondary" size="medium"
+                >Más información</my-button
+            >
+            <my-button type="outline" size="large">Más información</my-button>
+        </div>
+        <div>
+            <my-link type="primary" size="small">Enlace</my-link>
+            <my-link type="secondary" size="medium">Enlace</my-link>
+            <my-link type="primary" size="large">Enlace</my-link>
+        </div>
+        <script type="module" src="/src/components/Button.ts"></script>
+        <script type="module" src="/src/components/Link.ts"></script>
     </body>
 </html>
